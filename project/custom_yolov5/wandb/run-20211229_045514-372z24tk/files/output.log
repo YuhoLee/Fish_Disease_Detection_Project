@@ -1,0 +1,64 @@
+                 from  n    params  module                                  arguments
+  0                -1  1      5280  models.common.Conv                      [3, 48, 6, 2, 2]
+  1                -1  1     41664  models.common.Conv                      [48, 96, 3, 2]
+  2                -1  2     65280  models.common.C3                        [96, 96, 2]
+  3                -1  1    166272  models.common.Conv                      [96, 192, 3, 2]
+  4                -1  4    444672  models.common.C3                        [192, 192, 4]
+  5                -1  1    664320  models.common.Conv                      [192, 384, 3, 2]
+  6                -1  6   2512896  models.common.C3                        [384, 384, 6]
+  7                -1  1   2655744  models.common.Conv                      [384, 768, 3, 2]
+  8                -1  2   4134912  models.common.C3                        [768, 768, 2]
+  9                -1  1   1476864  models.common.SPPF                      [768, 768, 5]
+ 10                -1  1    295680  models.common.Conv                      [768, 384, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  2   1182720  models.common.C3                        [768, 384, 2, False]
+ 14                -1  1     74112  models.common.Conv                      [384, 192, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  2    296448  models.common.C3                        [384, 192, 2, False]
+ 18                -1  1    332160  models.common.Conv                      [192, 192, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  2   1035264  models.common.C3                        [384, 384, 2, False]
+ 21                -1  1   1327872  models.common.Conv                      [384, 384, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  2   4134912  models.common.C3                        [768, 768, 2, False]
+ 24      [17, 20, 23]  1     24246  models.yolo.Detect                      [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [192, 384, 768]]
+Model Summary: 369 layers, 20871318 parameters, 20871318 gradients, 48.0 GFLOPs
+Transferred 474/481 items from yolov5m.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 79 weight, 82 weight (no decay), 82 bias
+[34m[1mtrain: [39m[22mScanning 'C:\Users\LeeYuho\yolov5\data\labels\train\anchor_worms.cache' images and labels... 122 found, 0 missin
+module 'signal' has no attribute 'SIGALRM'
+[34m[1mval: [39m[22mScanning 'C:\Users\LeeYuho\yolov5\data\labels\val\anchor_worms.cache' images and labels... 0 found, 7 missing, 0 e
+[34m[1mAutoAnchor: [39m[22m5.24 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mruns\train\FishDisease9
+Starting training for 200 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+  0%|          | 0/8 [00:00<?, ?it/s]                                                                                  C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+     0/199        0G    0.1224   0.03234         0        61       640:  12%|█▎        | 1/8 [00:36<04:15, 36.52s/it]  C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+     0/199        0G    0.1197   0.03142         0        50       640:  25%|██▌       | 2/8 [01:00<02:55, 29.18s/it]  C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+     0/199        0G    0.1205   0.03098         0        56       640:  38%|███▊      | 3/8 [01:24<02:13, 26.76s/it]  C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+     0/199        0G    0.1196    0.0308         0        44       640:  50%|█████     | 4/8 [01:47<01:41, 25.48s/it]  C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+     0/199        0G    0.1197   0.03097         0        59       640:  62%|██████▎   | 5/8 [02:12<01:14, 24.98s/it]  C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+     0/199        0G    0.1197   0.03097         0        59       640:  62%|██████▎   | 5/8 [02:21<01:24, 28.28s/it]
+Traceback (most recent call last):
+  File "train.py", line 627, in <module>
+    main(opt)
+  File "train.py", line 524, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "train.py", line 328, in train
+    scaler.scale(loss).backward()
+  File "C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "C:\Users\LeeYuho\anaconda3\envs\yolov5\lib\site-packages\torch\autograd\__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: [enforce fail at ..\c10\core\CPUAllocator.cpp:76] data. DefaultCPUAllocator: not enough memory: you tried to allocate 78643200 bytes.

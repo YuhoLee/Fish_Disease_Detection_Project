@@ -1,0 +1,35 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.12",
+    "heartbeatAt": "2021-12-28T16:56:58.717669",
+    "startedAt": "2021-12-28T16:56:56.509565",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--data",
+        "C:\\Users\\LeeYuho\\yolov5\\data\\dataset.yaml",
+        "--cfg",
+        "C:\\Users\\LeeYuho\\yolov5\\models\\yolov5m.yaml",
+        "--weight",
+        "yolov5m.pt",
+        "--batch",
+        "32",
+        "--epochs",
+        "200",
+        "--name",
+        "test"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5.git",
+        "commit": "db6ec66a602a0b64a7db1711acd064eda5daf2b3"
+    },
+    "email": null,
+    "root": "C:/Users/LeeYuho/yolov5",
+    "host": "DESKTOP-40MQAOE",
+    "username": "LeeYuho",
+    "executable": "C:\\Users\\LeeYuho\\anaconda3\\envs\\yolov5\\python.exe"
+}

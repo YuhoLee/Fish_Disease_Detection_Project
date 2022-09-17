@@ -1,0 +1,5 @@
+train: C:\Users\LeeYuho\yolov5\data\images\train\anchor_worms
+val: C:\Users\LeeYuho\yolov5\data\images\val\anchor_worms
+
+nc: 1
+names: ['AnchorWorms']

@@ -1,0 +1,37 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.12",
+    "heartbeatAt": "2021-12-28T19:23:18.262732",
+    "startedAt": "2021-12-28T19:23:16.253230",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--data",
+        "C:\\Users\\LeeYuho\\yolov5\\data\\dataset.yaml",
+        "--cfg",
+        "C:\\Users\\LeeYuho\\yolov5\\models\\yolov5m.yaml",
+        "--weights",
+        "yolov5m.pt",
+        "--batch",
+        "16",
+        "--worker",
+        "4",
+        "--epochs",
+        "200",
+        "--name",
+        "FishDisease"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5.git",
+        "commit": "db6ec66a602a0b64a7db1711acd064eda5daf2b3"
+    },
+    "email": null,
+    "root": "C:/Users/LeeYuho/yolov5",
+    "host": "DESKTOP-40MQAOE",
+    "username": "LeeYuho",
+    "executable": "C:\\Users\\LeeYuho\\anaconda3\\envs\\yolov5\\python.exe"
+}
